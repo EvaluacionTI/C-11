@@ -45,7 +45,7 @@ void CEAnfibio::imprimeTipoMotor(){
     cout << "Motor terrestre : ";
     CETerrestre::imprimeTipoMotor();
     cout << "Motor acuático";
-    CEMarino::imprimeTipoMotor()
+    CEMarino::imprimeTipoMotor();
 }
 /*
  * 
