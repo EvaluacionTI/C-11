@@ -11,9 +11,7 @@
  * Created on 6 de abril de 2018, 09:31 AM
  */
 
-#include <cstdlib>
 #include <iostream>
-
 using namespace std;
 
 template <class miTipoGenerico>
@@ -21,6 +19,18 @@ template <class miTipoGenerico>
 miTipoGenerico mayor(miTipoGenerico a, miTipoGenerico b){
     return (a > b)? a : b;
 };
+
+// Sobrecarga de la función
+template <class miSobrecarga>
+miSobrecarga maximo(int *p, miSobrecarga pCarga){
+    
+}
+
+// Sobrecarga de la función
+template <class miSobreCarga2>
+miSobreCarga2 maximo(miSobreCarga2 pCargArreglo[]){
+    
+}
 
 /*
  * 
