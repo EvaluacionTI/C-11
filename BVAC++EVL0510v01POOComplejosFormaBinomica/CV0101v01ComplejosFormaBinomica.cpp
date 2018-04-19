@@ -1,18 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   CV0101v01ComplejosFormaBinomica.cpp
  * Author: Alex
  *
  * Created on 12 de abril de 2018, 08:48 AM
  */
-
 #include <cstdlib>
 #include <iostream>
+
 using namespace std;
 
 /*
@@ -35,6 +29,10 @@ public:
     void calculadora(const CLComplejo&a, const CLComplejo& b);
 };
 
+CLComplejo::CLComplejo(double r, double i){
+    real = r;
+    imag = i;
+}
 void CLComplejo::setAsignareal(double r){real = r;}
 void CLComplejo::setAsignaImaginario(double i){ imag = i; }
 double CLComplejo::getParteReal(){ return real; }
@@ -51,22 +49,23 @@ void CLComplejo::resta(const CLComplejo& a, const CLComplejo& b){
     
 }
 
-void CLComplejo::calculadora(const CLComplejo& a, const CLComplejo& b){
-    cout << "Resultado de suma " << a.real << " + " << b.real << suma(a, b)<< endl;
-    cout << "Resultado de resta " << a.imag << " + " << b.imag << resta(a, b) << endl;
-};
+//void CLComplejo::calculadora(const CLComplejo& a, const CLComplejo& b){
+//    cout << "Resultado de suma " << a.real << " + " << b.real << suma(a, b)<< endl;
+//    cout << "Resultado de resta " << a.imag << " + " << b.imag << resta(a, b) << endl;
+//};
 
 int main(int argc, char** argv) {
+    cout << "Representar complejos en forma binómica " ;
     CLComplejo oCLReal, oCLImaginario;
     CLComplejo oCLResultado;
     
-    oCLReal.setAsignareal(10);
-    oCLReal.setAsignaImaginario(20);
-    oCLImaginario.setAsignareal(30);
-    oCLImaginario.setAsignaImaginario(40);
-    
-    oCLResultado.calculadora(oCLReal, oCLImaginario);
-    
+//    oCLReal.setAsignareal(10);
+//    oCLReal.setAsignaImaginario(20);
+//    oCLImaginario.setAsignareal(30);
+//    oCLImaginario.setAsignaImaginario(40);
+
+//    oCLResultado.calculadora(oCLReal, oCLImaginario);
+
     return 0;
 }
 
