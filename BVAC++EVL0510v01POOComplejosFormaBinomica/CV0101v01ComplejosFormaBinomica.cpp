@@ -9,14 +9,11 @@
 
 using namespace std;
 
-/*
- * 
- */
 class CLComplejo{
 private:
     double real, imag;
 public:
-    CLComplejo();
+    //CLComplejo();
     CLComplejo(double r, double i);
     void setAsignareal(double r);
     void setAsignaImaginario(double i);
@@ -33,6 +30,7 @@ CLComplejo::CLComplejo(double r, double i){
     real = r;
     imag = i;
 }
+
 void CLComplejo::setAsignareal(double r){real = r;}
 void CLComplejo::setAsignaImaginario(double i){ imag = i; }
 double CLComplejo::getParteReal(){ return real; }
@@ -49,10 +47,14 @@ void CLComplejo::resta(const CLComplejo& a, const CLComplejo& b){
     
 }
 
-//void CLComplejo::calculadora(const CLComplejo& a, const CLComplejo& b){
+void CLComplejo::calculadora(const CLComplejo& a, const CLComplejo& b){
+    cout << "Resultado de suma " << a.real << " + "<< b.real;
+    cout << "Resultado de resta " << a.imag << " + "<< b.imag;
+}
+
 //    cout << "Resultado de suma " << a.real << " + " << b.real << suma(a, b)<< endl;
 //    cout << "Resultado de resta " << a.imag << " + " << b.imag << resta(a, b) << endl;
-//};
+
 
 int main(int argc, char** argv) {
     cout << "Representar complejos en forma binómica " ;
